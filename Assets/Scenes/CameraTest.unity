@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &416320548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1338195012589949627, guid: 8081b0a395c0bfb42a834d5c5a4c8aaf, type: 3}
+  m_PrefabInstance: {fileID: 2467779227405327983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &818183878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,6 +2991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034294517}
+  - component: {fileID: 2034294518}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -3008,6 +3014,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2034294518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034294516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5e15cde8c4b974fa6c5d2289ba7614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDistance: 1
+  moveSpeed: 20
+  objectToMove: {fileID: 416320548}
 --- !u!1001 &2467779227405327983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3026,11 +3047,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1560111849572319317, guid: 8081b0a395c0bfb42a834d5c5a4c8aaf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1560111849572319317, guid: 8081b0a395c0bfb42a834d5c5a4c8aaf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1560111849572319317, guid: 8081b0a395c0bfb42a834d5c5a4c8aaf, type: 3}
       propertyPath: m_LocalPosition.z
