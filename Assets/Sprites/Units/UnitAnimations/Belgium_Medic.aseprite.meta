@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: ef3f5fdb37368e14799de302d53274f4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Belgium_Medic_Frame_0
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 148
+      width: 19
+      height: 28
+    spriteID: 133f7339c516b9343b2863b8a38cf387
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 148}
+  - name: Belgium_Medic_Frame_1
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 184
+      width: 19
+      height: 28
+    spriteID: 866de3cf9f68dca4dad5178f2a58c2a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 184}
+  - name: Belgium_Medic_Frame_2
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 220
+      width: 19
+      height: 28
+    spriteID: 738f66c285e873b41ad877050034cc9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 220}
+  - name: Belgium_Medic_Frame_3
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 4
+      width: 19
+      height: 28
+    spriteID: 709658c6678a1864eb577216f741d3df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 4}
+  - name: Belgium_Medic_Frame_4
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 20
+      height: 28
+    spriteID: f0935a73a4ac21a43a6f45190b768b6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Belgium_Medic_Frame_5
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 40
+      width: 20
+      height: 28
+    spriteID: f73837094f4d3004c862b7637892ae63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 40}
+  - name: Belgium_Medic_Frame_6
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 40
+      width: 19
+      height: 28
+    spriteID: 800631b9d378d704885e5c540421ef3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 40}
+  - name: Belgium_Medic_Frame_7
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 76
+      width: 19
+      height: 28
+    spriteID: cb53054baa227f040bd2e5c2626e224e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 76}
+  - name: Belgium_Medic_Frame_8
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 112
+      width: 19
+      height: 28
+    spriteID: 4182ddc1b144f3443b1acc4388fa276f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 112}
+  - name: Belgium_Medic_Frame_9
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 148
+      width: 19
+      height: 28
+    spriteID: 9c9cb67eee26f8c42891474361bd25a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 148}
+  - name: Belgium_Medic_Frame_10
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 184
+      width: 19
+      height: 28
+    spriteID: 012ee0d1a3f1e6845af4744bcd9fcc69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 184}
+  - name: Belgium_Medic_Frame_11
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 220
+      width: 19
+      height: 28
+    spriteID: f3c73986cd235f44aafd1863e105ab6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 220}
+  - name: Belgium_Medic_Frame_12
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 20
+      height: 28
+    spriteID: 2bf789b7213733c48ba7eea442cade5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: Belgium_Medic_Frame_13
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 112
+      width: 20
+      height: 28
+    spriteID: cfee2169183fa964a8f03bb453085757
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 112}
+  - name: Belgium_Medic_Frame_14
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 59
+      y: 4
+      width: 19
+      height: 28
+    spriteID: 5e0ce367266a217488bdd6de2e4ec3ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 59, y: 4}
+  - name: Belgium_Medic_Frame_15
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 59
+      y: 40
+      width: 19
+      height: 28
+    spriteID: 2d46582a3eafb48498d5ee9f2361269d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 59, y: 40}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -881260478
+    name: Belgium_Medic
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Belgium_Medic_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 133f7339c516b9343b2863b8a38cf387
+    - name: Belgium_Medic_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 866de3cf9f68dca4dad5178f2a58c2a4
+    - name: Belgium_Medic_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 738f66c285e873b41ad877050034cc9f
+    - name: Belgium_Medic_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 709658c6678a1864eb577216f741d3df
+    - name: Belgium_Medic_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 7
+        y: 1
+        width: 20
+        height: 28
+      spriteId: f0935a73a4ac21a43a6f45190b768b6c
+    - name: Belgium_Medic_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 7
+        y: 1
+        width: 20
+        height: 28
+      spriteId: f73837094f4d3004c862b7637892ae63
+    - name: Belgium_Medic_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 800631b9d378d704885e5c540421ef3a
+    - name: Belgium_Medic_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: cb53054baa227f040bd2e5c2626e224e
+    - name: Belgium_Medic_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 4182ddc1b144f3443b1acc4388fa276f
+    - name: Belgium_Medic_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 9c9cb67eee26f8c42891474361bd25a0
+    - name: Belgium_Medic_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 012ee0d1a3f1e6845af4744bcd9fcc69
+    - name: Belgium_Medic_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: f3c73986cd235f44aafd1863e105ab6a
+    - name: Belgium_Medic_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 7
+        y: 1
+        width: 20
+        height: 28
+      spriteId: 2bf789b7213733c48ba7eea442cade5d
+    - name: Belgium_Medic_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 7
+        y: 1
+        width: 20
+        height: 28
+      spriteId: cfee2169183fa964a8f03bb453085757
+    - name: Belgium_Medic_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 5e0ce367266a217488bdd6de2e4ec3ce
+    - name: Belgium_Medic_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 2d46582a3eafb48498d5ee9f2361269d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}
