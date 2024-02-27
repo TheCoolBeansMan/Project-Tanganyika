@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 48ff990d050f6594c801e653c9188f78
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Belgium_Engineer_Frame_0
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 152
+      width: 19
+      height: 28
+    spriteID: 25b4421fcce46874db2a507545e7481c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 152}
+  - name: Belgium_Engineer_Frame_1
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 188
+      width: 19
+      height: 28
+    spriteID: 91c9f3b8bca111b4ba9e73bc4077a1f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 188}
+  - name: Belgium_Engineer_Frame_2
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 19
+      height: 28
+    spriteID: c4cf0eff5d36dac43be9db460ff4b030
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: Belgium_Engineer_Frame_3
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 4
+      width: 19
+      height: 28
+    spriteID: 1a5167fbc06a0b94d8a4c7335e8db67c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 4}
+  - name: Belgium_Engineer_Frame_4
+    originalName: 
+    pivot: {x: 0.39130434, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 23
+      height: 29
+    spriteID: db5fbe0608442354b86d15cdaaf4ca9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Belgium_Engineer_Frame_5
+    originalName: 
+    pivot: {x: 0.39130434, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 41
+      width: 23
+      height: 29
+    spriteID: 33f18a18df4ee3846a60b105cd0e0384
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 41}
+  - name: Belgium_Engineer_Frame_6
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 40
+      width: 19
+      height: 28
+    spriteID: c47597c093c1562489493bc0651fae30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 40}
+  - name: Belgium_Engineer_Frame_7
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 76
+      width: 19
+      height: 28
+    spriteID: 8f6132147387821479163fcb4866ea1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 76}
+  - name: Belgium_Engineer_Frame_8
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 112
+      width: 19
+      height: 28
+    spriteID: d02ee03f112968b4b9591e8315f96c6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 112}
+  - name: Belgium_Engineer_Frame_9
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 148
+      width: 19
+      height: 28
+    spriteID: 460285ac24646eb42a4cc49739c79bca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 148}
+  - name: Belgium_Engineer_Frame_10
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 184
+      width: 19
+      height: 28
+    spriteID: 322b79b782a9a034692fe7f665fff553
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 184}
+  - name: Belgium_Engineer_Frame_11
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 220
+      width: 19
+      height: 28
+    spriteID: 90742b78c66af5b47ba52d56a3c0939c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 220}
+  - name: Belgium_Engineer_Frame_12
+    originalName: 
+    pivot: {x: 0.39130434, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 78
+      width: 23
+      height: 29
+    spriteID: 90f405fd31c7c8c40aa64012005343b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 78}
+  - name: Belgium_Engineer_Frame_13
+    originalName: 
+    pivot: {x: 0.39130434, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 115
+      width: 23
+      height: 29
+    spriteID: 8c0943e2a9e706948948aa53e7e3f8c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 115}
+  - name: Belgium_Engineer_Frame_14
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 4
+      width: 19
+      height: 28
+    spriteID: 4f41f7d4d4e78894ab3fefa852f519a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 4}
+  - name: Belgium_Engineer_Frame_15
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 40
+      width: 19
+      height: 28
+    spriteID: 659861c930fc65244ab04dcc6d5920b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 40}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1528863733
+    name: Belgium_Engineer
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Belgium_Engineer_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 25b4421fcce46874db2a507545e7481c
+    - name: Belgium_Engineer_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 91c9f3b8bca111b4ba9e73bc4077a1f1
+    - name: Belgium_Engineer_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: c4cf0eff5d36dac43be9db460ff4b030
+    - name: Belgium_Engineer_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 1a5167fbc06a0b94d8a4c7335e8db67c
+    - name: Belgium_Engineer_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 7
+        y: 1
+        width: 23
+        height: 29
+      spriteId: db5fbe0608442354b86d15cdaaf4ca9a
+    - name: Belgium_Engineer_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 7
+        y: 1
+        width: 23
+        height: 29
+      spriteId: 33f18a18df4ee3846a60b105cd0e0384
+    - name: Belgium_Engineer_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: c47597c093c1562489493bc0651fae30
+    - name: Belgium_Engineer_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 8f6132147387821479163fcb4866ea1b
+    - name: Belgium_Engineer_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: d02ee03f112968b4b9591e8315f96c6d
+    - name: Belgium_Engineer_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 460285ac24646eb42a4cc49739c79bca
+    - name: Belgium_Engineer_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 322b79b782a9a034692fe7f665fff553
+    - name: Belgium_Engineer_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 90742b78c66af5b47ba52d56a3c0939c
+    - name: Belgium_Engineer_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 7
+        y: 1
+        width: 23
+        height: 29
+      spriteId: 90f405fd31c7c8c40aa64012005343b4
+    - name: Belgium_Engineer_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 7
+        y: 1
+        width: 23
+        height: 29
+      spriteId: 8c0943e2a9e706948948aa53e7e3f8c8
+    - name: Belgium_Engineer_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 4f41f7d4d4e78894ab3fefa852f519a2
+    - name: Belgium_Engineer_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 28
+      spriteId: 659861c930fc65244ab04dcc6d5920b3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}

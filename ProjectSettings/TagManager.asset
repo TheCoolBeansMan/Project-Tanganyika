@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TOW
+  - Unit
   layers:
   - Default
   - TransparentFX
@@ -40,4 +42,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2106713147
+    locked: 0
+  - name: Units
+    uniqueID: 2917005377
+    locked: 0
+  - name: ToW
+    uniqueID: 986510625
+    locked: 0
+  - name: Ships
+    uniqueID: 4119296497
+    locked: 0
+  - name: Map
+    uniqueID: 2447622673
     locked: 0

@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 9f1336c369f513f45afa27fd9b54d8a4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Alt_German_Medic_Frame_0
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 152
+      width: 19
+      height: 29
+    spriteID: c753e571149b4fa4384d4a86f6fd6718
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 152}
+  - name: Alt_German_Medic_Frame_1
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 189
+      width: 19
+      height: 29
+    spriteID: 1d605d0cb8ec9f04fa776c10a67d320a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 189}
+  - name: Alt_German_Medic_Frame_2
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 4
+      width: 19
+      height: 29
+    spriteID: 191b1251683d8b04ba3328decb4bd33b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 4}
+  - name: Alt_German_Medic_Frame_3
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 41
+      width: 19
+      height: 29
+    spriteID: d3723939b31337a489525bb452b016a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 41}
+  - name: Alt_German_Medic_Frame_4
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 20
+      height: 29
+    spriteID: 02a4c139fca0e504da72df7f1cc8a59d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Alt_German_Medic_Frame_5
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 41
+      width: 20
+      height: 29
+    spriteID: ff778464084fd6b4188ed8639d799fdc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 41}
+  - name: Alt_German_Medic_Frame_6
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 78
+      width: 19
+      height: 29
+    spriteID: 2fee840a907f52a44b66e291a2a8e068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 78}
+  - name: Alt_German_Medic_Frame_7
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 115
+      width: 19
+      height: 29
+    spriteID: 0e0ce8cd927b8f64ba92fcb09b3a9585
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 115}
+  - name: Alt_German_Medic_Frame_8
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 152
+      width: 19
+      height: 29
+    spriteID: d1880d0fc253d7c478cd6a8d87b58ce2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 152}
+  - name: Alt_German_Medic_Frame_9
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 189
+      width: 19
+      height: 29
+    spriteID: 74a1b433be1153049a8ff6a2644bf324
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 189}
+  - name: Alt_German_Medic_Frame_10
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 59
+      y: 4
+      width: 19
+      height: 29
+    spriteID: 02f96fb24ee24314e94d7c978b3a54af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 59, y: 4}
+  - name: Alt_German_Medic_Frame_11
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 59
+      y: 41
+      width: 19
+      height: 29
+    spriteID: 3f6ef00d3d073a846a0b96c3bf01ad60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 59, y: 41}
+  - name: Alt_German_Medic_Frame_12
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 78
+      width: 20
+      height: 29
+    spriteID: f6d665f81f7b026458d4e47cb8c94f78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 78}
+  - name: Alt_German_Medic_Frame_13
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 115
+      width: 20
+      height: 29
+    spriteID: c89ffda6de9f4d84db9e574786d6dd84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 115}
+  - name: Alt_German_Medic_Frame_14
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 59
+      y: 78
+      width: 19
+      height: 29
+    spriteID: 3b516fd5b2e58884997a15ab009974a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 59, y: 78}
+  - name: Alt_German_Medic_Frame_15
+    originalName: 
+    pivot: {x: 0.42105263, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 59
+      y: 115
+      width: 19
+      height: 29
+    spriteID: 2ec414b2ac2dda145b6e3339f5c70949
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 59, y: 115}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -261800763
+    name: Alt_German_Medic
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Alt_German_Medic_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: c753e571149b4fa4384d4a86f6fd6718
+    - name: Alt_German_Medic_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 1d605d0cb8ec9f04fa776c10a67d320a
+    - name: Alt_German_Medic_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 191b1251683d8b04ba3328decb4bd33b
+    - name: Alt_German_Medic_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: d3723939b31337a489525bb452b016a3
+    - name: Alt_German_Medic_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 7
+        y: 1
+        width: 20
+        height: 29
+      spriteId: 02a4c139fca0e504da72df7f1cc8a59d
+    - name: Alt_German_Medic_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 7
+        y: 1
+        width: 20
+        height: 29
+      spriteId: ff778464084fd6b4188ed8639d799fdc
+    - name: Alt_German_Medic_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 2fee840a907f52a44b66e291a2a8e068
+    - name: Alt_German_Medic_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 0e0ce8cd927b8f64ba92fcb09b3a9585
+    - name: Alt_German_Medic_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: d1880d0fc253d7c478cd6a8d87b58ce2
+    - name: Alt_German_Medic_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 74a1b433be1153049a8ff6a2644bf324
+    - name: Alt_German_Medic_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 02f96fb24ee24314e94d7c978b3a54af
+    - name: Alt_German_Medic_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 3f6ef00d3d073a846a0b96c3bf01ad60
+    - name: Alt_German_Medic_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 7
+        y: 1
+        width: 20
+        height: 29
+      spriteId: f6d665f81f7b026458d4e47cb8c94f78
+    - name: Alt_German_Medic_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 7
+        y: 1
+        width: 20
+        height: 29
+      spriteId: c89ffda6de9f4d84db9e574786d6dd84
+    - name: Alt_German_Medic_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 3b516fd5b2e58884997a15ab009974a5
+    - name: Alt_German_Medic_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 8
+        y: 1
+        width: 19
+        height: 29
+      spriteId: 2ec414b2ac2dda145b6e3339f5c70949
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}
