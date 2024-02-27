@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MoveTOW : MonoBehaviour
 {
-    public float moveDistance = 1.0f; // Distance to move in grid units
-    public float moveSpeed = 5.0f; // Speed of movement
-    public GameObject objectToMove; // Object to move
+    public float moveDistance = 1.0f;
+    public float moveSpeed = 5.0f;
+    public GameObject objectToMove;
 
     private Vector3 targetPosition;
     private bool isMoving = false;
@@ -57,8 +57,8 @@ public class MoveTOW : MonoBehaviour
         float maxY = 4.5f;
 
         // Clamp the target position within the boundaries
-        targetPosition.x = Mathf.Clamp(targetPosition.x, minX + 0.5f, maxX - 0.5f); // considering the size of the prefab
-        targetPosition.y = Mathf.Clamp(targetPosition.y, minY + 0.5f, maxY - 0.5f); // considering the size of the prefab
+        targetPosition.x = Mathf.Clamp(targetPosition.x, minX + 0.5f, maxX - 0.5f);
+        targetPosition.y = Mathf.Clamp(targetPosition.y, minY + 0.5f, maxY - 0.5f);
 
         isMoving = true;
     }
