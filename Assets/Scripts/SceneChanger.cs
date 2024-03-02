@@ -36,6 +36,11 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("GermVictory");
     }
 
+    public void LoadUnitSelect()
+    {
+        SceneManager.LoadScene("UnitSelect");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
