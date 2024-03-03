@@ -67,4 +67,9 @@ public class CharacterInfo : MonoBehaviour
     {
 
     }
+
+    public void Deactivate()
+    {
+        this.enabled = false;
+    }
 }
