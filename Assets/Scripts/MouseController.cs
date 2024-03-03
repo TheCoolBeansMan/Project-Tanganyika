@@ -33,9 +33,13 @@ public class MouseController : MonoBehaviour
             transform.position = overlayTile.transform.position;
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
 
-            if (Input.GetMouseButtonDown(0) && canMove == true)
+            if (canMove == true)
             {
-                path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
+                GetInRangeTiles();
+                if (Input.GetMouseButtonDown(0))
+                {
+                    path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
+                }
 
                 /*if (character == null)
                 {
@@ -52,6 +56,8 @@ public class MouseController : MonoBehaviour
         if (path.Count > 0)
         {
             MoveAlongPath();
+            canMove = false;
+            TurnOffTiles();
         }
     }
 
@@ -67,6 +73,14 @@ public class MouseController : MonoBehaviour
         foreach (var item in inRangeTiles)
         {
             item.ShowTile();
+        }
+    }
+
+    private void TurnOffTiles()
+    {
+        foreach (var item in inRangeTiles)
+        {
+            item.HideTile();
         }
     }
 
