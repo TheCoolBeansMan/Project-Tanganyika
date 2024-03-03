@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     public int currPlayer;
     public int currPhase;
 
+    public GameObject phaseButtonPlayer1;
+    public GameObject phaseButtonPlayer2;
+
     public List<GameObject> player1Units = new List<GameObject>();
     public List<GameObject> player2Units = new List<GameObject>();
 
@@ -14,12 +17,15 @@ public class GameManager : MonoBehaviour
     {
         currPhase = 1;
         currPlayer = 1;
+        Debug.Log("Player: " + currPlayer.ToString() + ", Phase: " + currPhase.ToString());
     }
 
     private void FixedUpdate()
     {
         if (currPlayer % 2 != 0)
         {
+            phaseButtonPlayer1.gameObject.SetActive(true);
+            phaseButtonPlayer2.gameObject.SetActive(false);
             if (currPhase == 1)
             {
                 //Player 1 Transition Animation
@@ -39,6 +45,8 @@ public class GameManager : MonoBehaviour
         }
         if (currPlayer % 2 == 0)
         {
+            phaseButtonPlayer2.gameObject.SetActive(true);
+            phaseButtonPlayer1.gameObject.SetActive(false);
             if (currPhase == 1)
             {
                 //Player 2 Transition Animation
@@ -66,5 +74,6 @@ public class GameManager : MonoBehaviour
             currPhase = 1;
             currPlayer++;
         }
+        Debug.Log("Player: " + currPlayer.ToString() + ", Phase: " + currPhase.ToString());
     }
 }

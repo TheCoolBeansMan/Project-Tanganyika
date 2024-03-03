@@ -7,7 +7,7 @@ public class CharacterInfo : MonoBehaviour
 {
     public OverlayTile activeTile;
     public GameObject actionMenu;
-    public GameObject healthBar;
+    public GameObject cursorStatus;
 
     public int unitMaxHP;
     public int unitCurrHP;
@@ -22,21 +22,23 @@ public class CharacterInfo : MonoBehaviour
 
     public void Start()
     {
-        healthBar.GetComponent<Slider>().maxValue = unitMaxHP;
+        actionMenu.GetComponentInChildren<Slider>().maxValue = unitMaxHP;
         unitCurrHP = unitMaxHP;
         activeMenu = false;
+        cursorStatus.GetComponent<MouseController>().character = this.GetComponent<CharacterInfo>();
+        cursorStatus.GetComponent<MouseController>().PositionCharacterOnTile(activeTile);
     }
     private void OnMouseDown()
     {
         Debug.Log("clicked");
         if (activeMenu == true)
         {
-            actionMenu.SetActive(false);
+            actionMenu.gameObject.SetActive(false);
             activeMenu = false;
         }
-        if (activeMenu == false)
+        else if (activeMenu == false)
         {
-            actionMenu.SetActive(true);
+            actionMenu.gameObject.SetActive(true);
             activeMenu = true;
         }
     }

@@ -6,7 +6,7 @@ using System.Linq;
 public class MouseController : MonoBehaviour
 {
     public GameObject characterPrefab;
-    private CharacterInfo character;
+    public CharacterInfo character;
     public float speed;
 
 
@@ -33,18 +33,17 @@ public class MouseController : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
+                path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
 
-                /*if(character == null)
+                /*if (character == null)
                 {
                     character = Instantiate(characterPrefab).GetComponent<CharacterInfo>();
-                    PositionCharacterOnTile(overlayTile);
+                    //PositionCharacterOnTile(overlayTile);
                 }
                 else
                 {
                     path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
-                }
-                */
-                path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
+                }*/
             }
         }
 
@@ -103,10 +102,10 @@ public class MouseController : MonoBehaviour
         return null;
     }
 
-    private void PositionCharacterOnTile(OverlayTile tile)
+    public void PositionCharacterOnTile(OverlayTile tile)
     {
         character.transform.position = new Vector3(tile.transform.position.x, tile.transform.position.y + 0.0001f, tile.transform.position.z);
-        character.GetComponent<SpriteRenderer>().sortingOrder = 3;
+        character.GetComponentInChildren<SpriteRenderer>().sortingOrder = 1;
         character.activeTile = tile;
     }
 }
