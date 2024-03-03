@@ -50,12 +50,17 @@ public class CharacterInfo : MonoBehaviour
 
     public void Move()
     {
-
+        
     }
 
     public void Board()
     {
         
+    }
+
+    public void Aim()
+    {
+
     }
 
     public void HealAndRepair()

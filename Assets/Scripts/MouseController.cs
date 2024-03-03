@@ -5,9 +5,10 @@ using System.Linq;
 
 public class MouseController : MonoBehaviour
 {
-    public GameObject characterPrefab;
     public CharacterInfo character;
     public float speed;
+
+    public bool canMove;
 
 
     private Pathfinder pathFinder;
@@ -17,6 +18,7 @@ public class MouseController : MonoBehaviour
 
     private void Start()
     {
+        canMove = false;
         pathFinder = new Pathfinder();
         rangeFinder = new RangeFinder();
     }
@@ -31,7 +33,7 @@ public class MouseController : MonoBehaviour
             transform.position = overlayTile.transform.position;
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && canMove == true)
             {
                 path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
 
