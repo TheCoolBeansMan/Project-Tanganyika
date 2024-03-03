@@ -7,7 +7,9 @@ public class CharacterInfo : MonoBehaviour
 {
     public OverlayTile activeTile;
     public GameObject actionMenu;
-    public GameObject cursorStatus;
+    private MouseController movementStatus;
+    private RangeFinder attackRange;
+    private List<OverlayTile> inRangeAttacks = new List<OverlayTile>();
 
     public int unitMaxHP;
     public int unitCurrHP;
@@ -25,8 +27,10 @@ public class CharacterInfo : MonoBehaviour
         actionMenu.GetComponentInChildren<Slider>().maxValue = unitMaxHP;
         unitCurrHP = unitMaxHP;
         activeMenu = false;
-        cursorStatus.GetComponent<MouseController>().character = this.GetComponent<CharacterInfo>();
-        cursorStatus.GetComponent<MouseController>().PositionCharacterOnTile(activeTile);
+        movementStatus = new MouseController();
+        attackRange = new RangeFinder();
+        movementStatus.GetComponent<MouseController>().character = this.GetComponent<CharacterInfo>();
+        movementStatus.GetComponent<MouseController>().PositionCharacterOnTile(activeTile);
     }
     private void OnMouseDown()
     {
@@ -45,17 +49,34 @@ public class CharacterInfo : MonoBehaviour
 
     public void Attack()
     {
+        inRangeAttacks = attackRange.GetTilesInRange(activeTile, 1);
+
+        foreach (var item in inRangeAttacks)
+        {
+            item.ShowTile();
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+
+        }
+
+    }
+
+    public void UnitAttack()
+    {
         
     }
 
+
     public void Move()
     {
-        
+        movementStatus.canMove = true;
     }
 
     public void Board()
     {
-        
+
     }
 
     public void Aim()

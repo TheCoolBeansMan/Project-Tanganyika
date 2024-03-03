@@ -26,32 +26,38 @@ public class MouseController : MonoBehaviour
     private void LateUpdate()
     {
         var focusedTileHit = GetFocusedOnTile();
-        
+
         if (focusedTileHit.HasValue)
         {
             OverlayTile overlayTile = focusedTileHit.Value.collider.gameObject.GetComponent<OverlayTile>();
             transform.position = overlayTile.transform.position;
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
 
-            if (Input.GetMouseButtonDown(0) && canMove == true)
+            if (canMove == true)
             {
-                path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
-
-                /*if (character == null)
-                {
-                    character = Instantiate(characterPrefab).GetComponent<CharacterInfo>();
-                    //PositionCharacterOnTile(overlayTile);
-                }
-                else
+                GetInRangeTiles();
+                if (Input.GetMouseButtonDown(0))
                 {
                     path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
-                }*/
+                }
+
+                //if (character == null)
+                //{
+                //    character = Instantiate(characterPrefab).GetComponent<CharacterInfo>();
+                //    //PositionCharacterOnTile(overlayTile);
+                //}
+                //else
+                //{
+                //    path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
+                //}
             }
         }
 
         if (path.Count > 0)
         {
             MoveAlongPath();
+            canMove = false;
+            TurnOffTiles();
         }
     }
 
@@ -70,6 +76,14 @@ public class MouseController : MonoBehaviour
         }
     }
 
+    private void TurnOffTiles()
+    {
+        foreach (var item in inRangeTiles)
+        {
+            item.HideTile();
+        }
+    }
+
     private void MoveAlongPath()
     {
         var step = speed * Time.deltaTime;
@@ -84,7 +98,7 @@ public class MouseController : MonoBehaviour
             path.RemoveAt(0);
         }
 
-        if(path.Count == 0)
+        if (path.Count == 0)
         {
             GetInRangeTiles();
         }

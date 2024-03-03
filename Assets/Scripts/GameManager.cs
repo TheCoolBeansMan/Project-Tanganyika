@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -58,6 +59,18 @@ public class GameManager : MonoBehaviour
         foreach (GameObject unit in player1Units)
         {
             unit.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        }
+    }
+    private void Update()
+    {
+        if (player1Units.Count == 0)
+        {
+            SceneManager.LoadScene("GermVictory");
+        }
+
+        if (player2Units.Count == 0)
+        {
+            SceneManager.LoadScene("BritVictory");
         }
     }
 
@@ -146,7 +159,7 @@ public class GameManager : MonoBehaviour
     public void EndPhase()
     {
         currPhase++;
-        if (currPhase > 3)
+        if (currPhase > 1)
         {
             currPhase = 1;
             currPlayer++;
