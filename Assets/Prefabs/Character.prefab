@@ -98,3 +98,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeTile: {fileID: 0}
+  unitMaxHP: 0
+  unitCurrHP: 0
+  unitAttack: 0
+  unitAccuracy: 0
+  unitEvasion: 0
+  unitSpeed: 1
+  unitDefense: 0

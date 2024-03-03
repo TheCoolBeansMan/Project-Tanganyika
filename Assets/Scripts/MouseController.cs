@@ -33,18 +33,18 @@ public class MouseController : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                overlayTile.GetComponent<OverlayTile>().ShowTile();
 
-                if(character == null)
+                /*if(character == null)
                 {
                     character = Instantiate(characterPrefab).GetComponent<CharacterInfo>();
                     PositionCharacterOnTile(overlayTile);
-                    GetInRangeTiles();
                 }
                 else
                 {
-                    path = pathFinder.FindPath(character.activeTile, overlayTile);
+                    path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
                 }
+                */
+                path = pathFinder.FindPath(character.activeTile, overlayTile, inRangeTiles);
             }
         }
 
@@ -61,7 +61,7 @@ public class MouseController : MonoBehaviour
             item.HideTile();
         }
 
-        inRangeTiles = rangeFinder.GetTilesInRange(character.activeTile, 3);
+        inRangeTiles = rangeFinder.GetTilesInRange(character.activeTile, character.unitSpeed);
 
         foreach (var item in inRangeTiles)
         {

@@ -5,7 +5,7 @@ using System.Linq;
 
 public class Pathfinder
 {
-    public List<OverlayTile> FindPath(OverlayTile startingNode, OverlayTile endNode)
+    public List<OverlayTile> FindPath(OverlayTile startingNode, OverlayTile endNode, List<OverlayTile> searchableTiles)
     {
         List<OverlayTile> openList = new List<OverlayTile>();
         List<OverlayTile> closedList = new List<OverlayTile>();
@@ -24,7 +24,7 @@ public class Pathfinder
                 return GetFinishedList(startingNode, endNode);
             }
 
-            var neighborTiles = MapManager.Instance.GetNeighborTiles(currentOverlayTile);
+            var neighborTiles = MapManager.Instance.GetNeighborTiles(currentOverlayTile, searchableTiles);
 
             foreach(var neighbor in neighborTiles)
             {
