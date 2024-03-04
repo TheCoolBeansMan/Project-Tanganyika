@@ -6,6 +6,8 @@ TagManager:
   tags:
   - TOW
   - Unit
+  - BritUnit
+  - GermUnit
   layers:
   - Default
   - TransparentFX
