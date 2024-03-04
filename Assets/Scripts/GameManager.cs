@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor.Android;
 
 public class GameManager : MonoBehaviour
 {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
-using UnityEditor.Android;
 
 public class CharacterInfo : MonoBehaviour
 {
