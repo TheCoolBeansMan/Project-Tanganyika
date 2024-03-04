@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GermVictory.unity
     guid: e62b1a7c565dad041b4666d961206d01
+  - enabled: 1
+    path: Assets/Scenes/FunctionalityTestScene.unity
+    guid: d5bed98bf96448f47bd4ece75b667e4b
   m_configObjects: {}
