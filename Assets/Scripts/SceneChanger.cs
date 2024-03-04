@@ -41,6 +41,11 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("UnitSelect");
     }
 
+    public void LoadFunctTest()
+    {
+        SceneManager.LoadScene("FunctionalityTestScene");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
