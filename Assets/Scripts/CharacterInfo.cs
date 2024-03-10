@@ -10,6 +10,8 @@ public class CharacterInfo : MonoBehaviour
     public Tilemap battleMap;
     public Tile currentTile;
     public GameObject actionMenu;
+    public LayerMask unitLayerMask;
+    public string unitTag;
     private MouseController movementStatus;
     private RangeFinder attackRange;
     private List<OverlayTile> inRangeAttacks = new List<OverlayTile>();
@@ -84,12 +86,12 @@ public class CharacterInfo : MonoBehaviour
 
     public void UnitAttack()
     {
-        
+
         //// Check if the raycast origin is assigned
         //if (raycastOrigin != null)
         //{
-        //    float raycastLength = 10f;
-        //    Vector2 originPosition = raycastOrigin.transform.position;
+        float raycastLength = 10f;
+        Vector2 originPosition = raycastOrigin.transform.position;
 
         //    // Raycast upwards from one tile above the raycast origin, detect objects with "GermUnit" tag
         //    RaycastHit2D hitUp = Physics2D.Raycast(originPosition + Vector2.up, Vector2.up, raycastLength);
@@ -116,6 +118,28 @@ public class CharacterInfo : MonoBehaviour
         //{
         //    Debug.LogError("Raycast origin is not assigned!");
         //}
+
+        if (raycastOrigin != null)
+        {
+            // Perform a raycast upwards
+            RaycastHit2D hitUp = Physics2D.Raycast(originPosition + Vector2.up, Vector2.up, raycastLength);
+            if (hitUp.collider != null && hitUp.collider.CompareTag(unitTag))
+            {
+                Debug.Log("Detected object with tag " + unitTag + " above.");
+            }
+
+            // Perform a raycast downwards
+            RaycastHit2D hitDown = Physics2D.Raycast(originPosition - Vector2.up, Vector2.down, raycastLength);
+            if (hitDown.collider != null && hitDown.collider.CompareTag(unitTag))
+            {
+                Debug.Log("Detected object with tag " + unitTag + " below.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Raycast origin is not assigned!");
+        }
+
     }
 
 
