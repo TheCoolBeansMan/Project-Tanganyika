@@ -26,6 +26,7 @@ public class CharacterInfo : MonoBehaviour
 
     public GameObject raycastOrigin;
     public bool highlighted;
+    public bool canMove;
 
     public int unitMaxHP;
     public int unitCurrHP;
@@ -35,6 +36,9 @@ public class CharacterInfo : MonoBehaviour
     public int unitEvasion;
     public int unitSpeed;
     public int unitDefense;
+
+    private Vector2 worldPoint;
+    private RaycastHit2D hit;
 
     private bool activeMenu;
 
@@ -50,19 +54,22 @@ public class CharacterInfo : MonoBehaviour
         unitPosition = new Vector3Int(-1, -1, 0);
         selectorIcon.SetActive(false);
         selected = false;
+        canMove = false;
 
     }
 
     private void Update()
     {
+        /*
+        worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
         xPos = (int) this.gameObject.transform.position.x;
         yPos = (int) this.gameObject.transform.position.y;
         zPos = (int) this.gameObject.transform.position.z;
 
         unitPosition = new Vector3Int(xPos, yPos, zPos);
         currentTile = (Tile) battleMap.GetTile(unitPosition);
-        activeTile.gridLocation = unitPosition;
-        
+        activeTile.gridLocation = unitPosition; */
     }
     private void OnMouseDown()
     {
@@ -211,7 +218,7 @@ public class CharacterInfo : MonoBehaviour
 
     public void Move()
     {
-        movementStatus.canMove = true;
+        
     }
 
     public void Board()
