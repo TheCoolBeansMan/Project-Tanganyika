@@ -14,6 +14,8 @@ public class CharacterInfo : MonoBehaviour
     public string unitTag;
     public GameObject selectorIcon;
     public bool selected;
+    public GameObject dmgIcon;
+    public Text dmgText;
     private MouseController movementStatus;
     private RangeFinder attackRange;
     private List<OverlayTile> inRangeAttacks = new List<OverlayTile>();
@@ -127,17 +129,48 @@ public class CharacterInfo : MonoBehaviour
             RaycastHit2D hitDown = Physics2D.Raycast(originPosition - Vector2.up, Vector2.down, raycastLength, unitLayerMask);
             Debug.DrawRay(originPosition - Vector2.up, Vector2.down * raycastLength, Color.blue, 1f); // Draw the ray for visualization
 
-            // Handle hit results if needed
+
             if (hitUp.collider != null)
             {
                 Debug.Log("Hit something above at position: " + hitUp.point);
                 Debug.Log("Collider tag: " + hitUp.collider.tag);
+
+                if (hitUp.collider.CompareTag("GermUnit"))
+                {
+                    CharacterInfo germUnitInfo = hitUp.collider.GetComponent<CharacterInfo>();
+                    germUnitInfo.unitCurrHP -= unitAttack;
+                    dmgIcon.SetActive(true);
+                    dmgText.gameObject.SetActive(true);
+                    dmgText.text = unitAttack + "\n DAMAGE";
+                    Invoke("DeactivateDMG", 2f);
+
+                    if (germUnitInfo.unitCurrHP <= 0)
+                    {
+                        Destroy(hitUp.collider.gameObject);
+                    }
+                }
+
             }
 
             if (hitDown.collider != null)
             {
                 Debug.Log("Hit something below at position: " + hitDown.point);
                 Debug.Log("Collider tag: " + hitDown.collider.tag);
+
+                if (hitDown.collider.CompareTag("BritUnit"))
+                {
+                    CharacterInfo britUnitInfo = hitDown.collider.GetComponent<CharacterInfo>();
+                    britUnitInfo.unitCurrHP -= unitAttack;
+                    dmgIcon.SetActive(true);
+                    dmgText.gameObject.SetActive(true);
+                    dmgText.text = unitAttack + "\n DAMAGE";
+                    Invoke("DeactivateDMG", 2f);
+
+                    if (britUnitInfo.unitCurrHP <= 0)
+                    {
+                        Destroy(hitDown.collider.gameObject);
+                    }
+                }
             }
         }
         else
@@ -145,87 +178,12 @@ public class CharacterInfo : MonoBehaviour
             Debug.LogError("Raycast origin is not assigned!");
         }
 
-        //if (raycastOrigin != null)
-        //{
-        //    // Perform a raycast upwards
-        //    RaycastHit2D hitUp = Physics2D.Raycast(originPosition + Vector2.up, Vector2.up, raycastLength);
-        //    if (hitUp.collider != null && hitUp.collider.CompareTag(unitTag))
-        //    {
-        //        Debug.Log("Detected object with tag " + unitTag + " above.");
-        //    }
+    }
 
-        //    // Perform a raycast downwards
-        //    RaycastHit2D hitDown = Physics2D.Raycast(originPosition - Vector2.up, Vector2.down, raycastLength);
-        //    if (hitDown.collider != null && hitDown.collider.CompareTag(unitTag))
-        //    {
-        //        Debug.Log("Detected object with tag " + unitTag + " below.");
-        //    }
-        //}
-        //else
-        //{
-        //    Debug.LogError("Raycast origin is not assigned!");
-        //}
-
-        //if (unitPosition.x != -1 && unitPosition.y != -1)
-        //{
-        //    Vector3Int[] allTilesInColumn = GetAllTilesInColumn(unitPosition.x);
-
-        //    foreach (Vector3Int tilePos in allTilesInColumn)
-        //    {
-        //        Collider2D[] colliders = Physics2D.OverlapPointAll(battleMap.GetCellCenterWorld(tilePos));
-
-        //        foreach (Collider2D collider in colliders)
-        //        {
-        //            // Check if this collider belongs to a unit
-        //            if (collider.CompareTag("BritUnit"))
-        //            {
-        //                // TODO: Implement attack logic here
-        //                Debug.Log("Attacking unit at position: " + tilePos);
-        //            }
-
-        //            else if (collider.CompareTag("GermUnit"))
-        //            {
-        //                // TODO: Implement attack logic here
-        //                Debug.Log("Attacking unit at position: " + tilePos);
-        //            }
-        //        }
-        //    }
-        //}
-        //else
-        //{
-        //    Debug.LogError("No unit selected!");
-        //}
-
-        //if (unitPosition.x != -1 && unitPosition.y != -1)
-        //{
-        //    // Get all game objects in the same column as the selected unit
-        //    Vector3Int[] allTilesInColumn = GetAllTilesInColumn(unitPosition.x);
-
-        //    // Iterate through all tiles in the column
-        //    foreach (Vector3Int tilePos in allTilesInColumn)
-        //    {
-        //        // Check if there's a unit at this position
-        //        Collider2D[] colliders = Physics2D.OverlapPointAll(battleMap.GetCellCenterWorld(tilePos));
-
-        //        // Iterate through all colliders at this position
-        //        foreach (Collider2D collider in colliders)
-        //        {
-        //            // Check if this collider belongs to a BritUnit or GermUnit
-        //            if (collider.CompareTag("BritUnit") || collider.CompareTag("GermUnit"))
-        //            {
-        //                // TODO: Implement attack logic here
-        //                Debug.Log("Attacking unit at position: " + tilePos);
-        //            }
-        //        }
-        //    }
-        //}
-        //else
-        //{
-        //    Debug.LogError("No unit selected!");
-        //}
-
-
-
+    void DeactivateDMG()
+    {
+        dmgIcon.SetActive(false);
+        dmgText.gameObject.SetActive(false);
     }
 
     private Vector3Int[] GetAllTilesInColumn(int column)
