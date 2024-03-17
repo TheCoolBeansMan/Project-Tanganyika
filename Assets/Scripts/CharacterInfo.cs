@@ -12,6 +12,8 @@ public class CharacterInfo : MonoBehaviour
     public GameObject actionMenu;
     public LayerMask unitLayerMask;
     public string unitTag;
+    public GameObject selectorIcon;
+    public bool selected;
     private MouseController movementStatus;
     private RangeFinder attackRange;
     private List<OverlayTile> inRangeAttacks = new List<OverlayTile>();
@@ -44,6 +46,8 @@ public class CharacterInfo : MonoBehaviour
         movementStatus.GetComponent<MouseController>().character = this.GetComponent<CharacterInfo>();
         movementStatus.GetComponent<MouseController>().PositionCharacterOnTile(activeTile);
         unitPosition = new Vector3Int(-1, -1, 0);
+        selectorIcon.SetActive(false);
+        selected = false;
     }
 
     private void Update()
@@ -54,6 +58,7 @@ public class CharacterInfo : MonoBehaviour
 
         //unitPosition = new Vector3Int(xPos, yPos, zPos);
         //currentTile = battleMap.GetTile(unitPosition);
+        
     }
     private void OnMouseDown()
     {
@@ -62,11 +67,23 @@ public class CharacterInfo : MonoBehaviour
         {
             actionMenu.gameObject.SetActive(false);
             activeMenu = false;
+            selected = false;
         }
         else if (activeMenu == false)
         {
             actionMenu.gameObject.SetActive(true);
             activeMenu = true;
+            selected = true;
+        }
+
+        if (selected)
+        {
+            selectorIcon.SetActive(true);
+        }
+
+        else
+        {
+            selectorIcon.SetActive(true);
         }
     }
 
