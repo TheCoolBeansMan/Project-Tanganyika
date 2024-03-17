@@ -55,12 +55,13 @@ public class CharacterInfo : MonoBehaviour
 
     private void Update()
     {
-        //xPos = (int) transform.position.x;
-        //yPos = (int) transform.position.y;
-        //zPos = (int) transform.position.z;
+        xPos = (int) this.gameObject.transform.position.x;
+        yPos = (int) this.gameObject.transform.position.y;
+        zPos = (int) this.gameObject.transform.position.z;
 
-        //unitPosition = new Vector3Int(xPos, yPos, zPos);
-        //currentTile = battleMap.GetTile(unitPosition);
+        unitPosition = new Vector3Int(xPos, yPos, zPos);
+        currentTile = (Tile) battleMap.GetTile(unitPosition);
+        activeTile.gridLocation = unitPosition;
         
     }
     private void OnMouseDown()
