@@ -48,6 +48,19 @@ public class CharacterInfo : MonoBehaviour
         unitPosition = new Vector3Int(-1, -1, 0);
         selectorIcon.SetActive(false);
         selected = false;
+
+        GameObject[] britUnits = GameObject.FindGameObjectsWithTag("BritUnit");
+
+        foreach (GameObject britUnit in britUnits)
+        {
+            CharacterInfo unitController = britUnit.GetComponent<CharacterInfo>();
+
+            if (unitController != null)
+            {
+                unitController.unitAttack = 3;
+                Debug.Log("unitAttack value set to 3");
+            }
+        }
     }
 
     private void Update()
