@@ -180,6 +180,16 @@ public class GameManager : MonoBehaviour
 
             if (currPlayer > 2)
             {
+                foreach (GameObject unit in player1Units)
+                {
+                    unit.GetComponent<CharacterInfo>().attackButton.enabled = true;
+                    unit.GetComponent<CharacterInfo>().moveButton.enabled = true;
+                }
+                foreach (GameObject unit in player2Units)
+                {
+                    unit.GetComponent<CharacterInfo>().attackButton.enabled = true;
+                    unit.GetComponent<CharacterInfo>().moveButton.enabled = true;
+                }
                 currPlayer = 1;
             }
         }

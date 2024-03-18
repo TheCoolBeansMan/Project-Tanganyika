@@ -21,14 +21,18 @@ public class CharacterInfo : MonoBehaviour
     public Text dmgText;
     public GameObject BattleHUD;
     public Button attackButton;
+    public Button moveButton;
+    public Button leftButton;
+    public Button rightButton;
+    public Button confirmButton;
     public GameObject gameManager;
     private MouseController movementStatus;
     private RangeFinder attackRange;
     private List<OverlayTile> inRangeAttacks = new List<OverlayTile>();
-    private Vector3Int unitPosition;
-    private int xPos;
-    private int yPos;
-    private int zPos;
+    private Vector3 unitPosition;
+    private float xPos;
+    private float yPos;
+    private float zPos;
 
     public GameObject raycastOrigin;
     public bool highlighted;
@@ -69,16 +73,7 @@ public class CharacterInfo : MonoBehaviour
 
     private void Update()
     {
-        /*
-        worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        xPos = (int) this.gameObject.transform.position.x;
-        yPos = (int) this.gameObject.transform.position.y;
-        zPos = (int) this.gameObject.transform.position.z;
-
-        unitPosition = new Vector3Int(xPos, yPos, zPos);
-        currentTile = (Tile) battleMap.GetTile(unitPosition);
-        activeTile.gridLocation = unitPosition; */
+        
     }
     private void OnMouseDown()
     {
@@ -111,6 +106,9 @@ public class CharacterInfo : MonoBehaviour
             enemySelectorIcon.SetActive(false);
             aimArrow.SetActive(false);
             BattleHUD.gameObject.SetActive(false);
+            leftButton.gameObject.SetActive(false);
+            rightButton.gameObject.SetActive(false);
+            confirmButton.gameObject.SetActive(false);
         }
     }
 
@@ -250,7 +248,40 @@ public class CharacterInfo : MonoBehaviour
 
     public void Move()
     {
+        leftButton.gameObject.SetActive(true);
+        rightButton.gameObject.SetActive(true);
+        confirmButton.gameObject.SetActive(true);
+    }
+
+    public void LeftMovement()
+    {
+        Debug.Log("Left");
+        xPos =  this.gameObject.transform.position.x;
+        yPos =  this.gameObject.transform.position.y;
+        zPos =  this.gameObject.transform.position.z;
+
+        unitPosition = new Vector3(xPos - 1, yPos, zPos);
+        this.gameObject.transform.position = Vector3.MoveTowards(transform.position, unitPosition, 1f * Time.deltaTime);
+    }
+
+    public void RightMovement()
+    {
+        Debug.Log("Right");
+        xPos = this.gameObject.transform.position.x;
+        yPos = this.gameObject.transform.position.y;
+        zPos = this.gameObject.transform.position.z;
+
+        unitPosition = new Vector3(xPos + 1, yPos, zPos);
+        this.gameObject.transform.position = Vector3.MoveTowards(transform.position, unitPosition, 1f * Time.deltaTime);
+    }
+
+    public void Confirm()
+    {
         
+        moveButton.enabled = false;
+        leftButton.gameObject.SetActive(false);
+        rightButton.gameObject.SetActive(false);
+        confirmButton.gameObject.SetActive(false);
     }
 
     public void Board()
