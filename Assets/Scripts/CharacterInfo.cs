@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
@@ -13,9 +14,14 @@ public class CharacterInfo : MonoBehaviour
     public LayerMask unitLayerMask;
     public string unitTag;
     public GameObject selectorIcon;
+    public GameObject enemySelectorIcon;
+    public GameObject aimArrow;
     public bool selected;
     public GameObject dmgIcon;
     public Text dmgText;
+    public GameObject BattleHUD;
+    public Button attackButton;
+    public GameObject gameManager;
     private MouseController movementStatus;
     private RangeFinder attackRange;
     private List<OverlayTile> inRangeAttacks = new List<OverlayTile>();
@@ -53,8 +59,11 @@ public class CharacterInfo : MonoBehaviour
         movementStatus.GetComponent<MouseController>().PositionCharacterOnTile(activeTile);
         unitPosition = new Vector3Int(-1, -1, 0);
         selectorIcon.SetActive(false);
+        enemySelectorIcon.SetActive(false);
+        aimArrow.SetActive(false);
         selected = false;
         canMove = false;
+        BattleHUD.SetActive(false);
 
     }
 
@@ -90,11 +99,18 @@ public class CharacterInfo : MonoBehaviour
         if (selected)
         {
             selectorIcon.SetActive(true);
+            enemySelectorIcon.SetActive(true);
+            aimArrow.SetActive(true);
+            BattleHUD.gameObject.SetActive(true); //Make this into a function later instead, so that there can be custom text and info
+
         }
 
         else
         {
-            selectorIcon.SetActive(true);
+            selectorIcon.SetActive(false);
+            enemySelectorIcon.SetActive(false);
+            aimArrow.SetActive(false);
+            BattleHUD.gameObject.SetActive(false);
         }
     }
 
@@ -150,11 +166,14 @@ public class CharacterInfo : MonoBehaviour
                     dmgIcon.SetActive(true);
                     dmgText.gameObject.SetActive(true);
                     dmgText.text = unitAttack + "\n DAMAGE";
+                    DeactivateBattleUI();
                     Invoke("DeactivateDMG", 2f);
+                    attackButton.enabled = false;
 
                     if (germUnitInfo.unitCurrHP <= 0)
                     {
                         Destroy(hitUp.collider.gameObject);
+                        gameManager.GetComponent<GameManager>().player2Units.Remove(null);
                     }
                 }
 
@@ -172,14 +191,18 @@ public class CharacterInfo : MonoBehaviour
                     dmgIcon.SetActive(true);
                     dmgText.gameObject.SetActive(true);
                     dmgText.text = unitAttack + "\n DAMAGE";
+                    DeactivateBattleUI();
                     Invoke("DeactivateDMG", 2f);
+                   attackButton.enabled = false;
 
                     if (britUnitInfo.unitCurrHP <= 0)
                     {
                         Destroy(hitDown.collider.gameObject);
+                        gameManager.GetComponent<GameManager>().player1Units.Remove(null);
                     }
                 }
             }
+
         }
         else
         {
@@ -192,6 +215,15 @@ public class CharacterInfo : MonoBehaviour
     {
         dmgIcon.SetActive(false);
         dmgText.gameObject.SetActive(false);
+    }
+
+    private void DeactivateBattleUI()
+    {
+        selectorIcon.SetActive(false);
+        enemySelectorIcon.SetActive(false);
+        aimArrow.SetActive(false);
+        BattleHUD.gameObject.SetActive(false);
+        actionMenu.SetActive(false);
     }
 
     private Vector3Int[] GetAllTilesInColumn(int column)

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using static UnityEngine.UI.CanvasScaler;
 
 public class GameManager : MonoBehaviour
 {
@@ -84,6 +85,19 @@ public class GameManager : MonoBehaviour
         {
             PhaseAnim2();
         }
+
+        foreach (GameObject unit in player1Units) 
+        {
+            if (unit == null)
+                player1Units.Remove(unit);
+        }
+
+        foreach (GameObject unit in player2Units)
+        {
+            if (unit == null)
+                player2Units.Remove(unit);
+        }
+
     }
 
     public void PhaseAnim1()
